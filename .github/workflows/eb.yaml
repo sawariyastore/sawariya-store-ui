@@ -31,7 +31,7 @@ jobs:
           application_name: inventory-management-ui
           environment_name: Inventorymanagementui-env
           #version_label: "deploy-sawariya-store-ui-app-${{ steps.format-time.outputs.replaced }}"
-          version_label: "deploy-sawariya-store-ui-app-0.0.1"
+          version_label: "deploy-sawariya-store-ui-app-0.0.1a"
           region: us-east-2
           deployment_package: deploy-sawariya-store-ui-app.zip
           use_existing_version_if_available : true
