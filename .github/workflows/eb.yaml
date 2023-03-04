@@ -20,7 +20,7 @@ jobs:
 
       - name: Generate Deployment Package 
         # zip all files except .git
-        run: zip -r deploy-sawariya-store-ui-app.zip * -x "**.git**"
+        run: zip -r sawariya-store-ui.zip * -x "**.git**"
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
@@ -31,9 +31,9 @@ jobs:
           application_name: inventory-management-ui
           environment_name: Inventorymanagementui-env
           #version_label: "deploy-sawariya-store-ui-app-${{ steps.format-time.outputs.replaced }}"
-          version_label: "deploy-sawariya-store-ui-app-0.0.1a"
+          version_label: "sawariya-store-ui-0.0.2"
           region: us-east-2
-          deployment_package: deploy-sawariya-store-ui-app.zip
+          deployment_package: sawariya-store-ui.zip
           use_existing_version_if_available : true
 
       - name: Deployed!
