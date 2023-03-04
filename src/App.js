@@ -49,7 +49,7 @@ const App = () => {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-success">
         <Link to={"/"} className="navbar-brand">
-          Sawariya Store
+          Sawariya Store App!
         </Link>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
